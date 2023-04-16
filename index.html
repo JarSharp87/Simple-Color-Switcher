@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/styles.css">
+        <script src="scripts/main-script.js"></script> 
+    </head> 
+    <body>
+        <div class="container">
+            <div class="container-title">
+                <h2 class="main-title">Board Hue Selector</h2>
+            </div>
+            <div class="image-container">
+                <img id="img-4" class="img-main img-4" src="graphics/Lite_full.gif"/>
+                <img id="img-3" class="img-main img-3" src="graphics/Lite_Legs.gif"/>
+                <img id="img-2" class="img-main img-2" src="graphics/Lite_Rails.gif"/>
+                <img id="img-1" class="img-main img-1" src="graphics/Lite_Tiles.gif"/>
+            </div>
+            <div class="hue-selector-container">
+                <h2 class="lesser-title">Hue selector</h2>
+                <ul>
+                    <li>
+                        <div>
+                            <input type="range" id="hue-1" name="hue-1" min="0" max="360" oninput="changeTilesHue(this.value);">
+                            <label for="hue-1">Hue</label>
+                            <input type="range" id="sat-1" name="sat-1" min="0" max="2000" oninput="changeTilesSat(this.value);">
+                            <label for="sat-1">Saturation</label>
+                            <input type="range" id="bright-1" name="bright-1" min="0" max="200" oninput="changeTilesBright(this.value);">
+                            <label for="bright-1">Brightness</label>
+                            <input type="range" id="contrast-1" name="contrast-1" min="0" max="200" oninput="changeTilesContrast(this.value);">
+                            <label for="contrast-1">Contrast</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <input type="range" id="hue-2" name="hue-2" min="0" max="360" oninput="changeRailsHue(this.value);">
+                            <label for="hue-2">Hue</label>
+                            <input type="range" id="sat-2" name="sat-2" min="0" max="2000" oninput="changeRailsSat(this.value);">
+                            <label for="sat-2">Saturation</label>
+                            <input type="range" id="bright-2" name="bright-2" min="0" max="200" oninput="changeRailsBright(this.value);">
+                            <label for="bright-2">Brightness</label>
+                            <input type="range" id="contrast-2" name="contrast-2" min="0" max="200" oninput="changeRailsContrast(this.value);">
+                            <label for="contrast-2">Contrast</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <input type="range" id="hue-3" name="hue-3" min="0" max="360" oninput="changeLegsHue(this.value);">
+                            <label for="hue-3">Hue</label>
+                            <input type="range" id="sat-3" name="sat-3" min="0" max="2000" oninput="changeLegsSat(this.value);">
+                            <label for="sat-3">Saturation</label>
+                            <input type="range" id="bright-3" name="bright-3" min="0" max="200" oninput="changeLegsBright(this.value);">
+                            <label for="bright-3">Brightness</label>
+                            <input type="range" id="contrast-3" name="contrast-3" min="0" max="200" oninput="changeLegsContrast(this.value);">
+                            <label for="contrast-3">Contrast</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <input type="range" id="hue-4" name="hue-4" min="0" max="360" oninput="changeFullHue(this.value);">
+                            <label for="hue-4">Hue</label>
+                            <input type="range" id="sat-4" name="sat-4" min="0" max="2000" oninput="changeFullSat(this.value);">
+                            <label for="sat-4">Saturation</label>
+                            <input type="range" id="bright-4" name="bright-4" min="0" max="200" oninput="changeFullBright(this.value);">
+                            <label for="bright-4">Brightness</label>
+                            <input type="range" id="contrast-4" name="contrast-4" min="0" max="200" oninput="changeFullContrast(this.value);">
+                            <label for="contrast-4">Contrast</label>
+                        </div>
+                    </li>
+                </ul>             
+            </div>
+        </div>
+    </body>
+</html>
